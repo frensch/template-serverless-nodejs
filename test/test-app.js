@@ -18,7 +18,7 @@ describe('Test App', function () {
 
         it('single test SampleApp', function () {
 
-            let ret = app.sampleApp({body: "{'param1': 'value1'}"}, (p)=> {return p;});
+            let ret = app.sampleApp({body: "{'param1': 'value1'}"}, (p1, p2)=> {return p2;});
 
             assert.equal(this.sampleToolFake.callCount, 1);
             assert.deepEqual(this.sampleToolFake.firstCall.args[0], "input value");

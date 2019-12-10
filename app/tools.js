@@ -12,9 +12,7 @@ var self = module.exports = {
                 {
                     message: message,
                     input: input,
-                },
-                null,
-                2
+                }
             ),
         };
     },
