@@ -1,0 +1,28 @@
+{
+  "name": "template-serverless-nodejs",
+  "version": "1.0.0",
+  "description": "Template for NodeJS using Serverless Framework and tests using mocha and nyc",
+  "main": "handler.js",
+  "scripts": {
+    "test": "nyc --reporter=text mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frensch/template-serverless-nodejs.git"
+  },
+  "author": "Thiago Frensch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frensch/template-serverless-nodejs/issues"
+  },
+  "homepage": "https://github.com/frensch/template-serverless-nodejs#readme",
+  "dependencies": {
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "serverless-offline": "^5.12.1",
+    "sinon": "^7.5.0"
+  }
+}
