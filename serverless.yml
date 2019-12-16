@@ -1,4 +1,4 @@
-service: template-serverless-nodejs
+service: template-serverless-nodejs # !!!!!  CHANGE SERVICE NAME !!!!!
 
 provider:
   name: aws
@@ -37,16 +37,19 @@ plugins:
   - serverless-offline
 
 custom:
-  prefixRoutePath: v1/template
+  prefixRoutePath: v1/template # !!!!!  CHANGE PREFIX !!!!!
 
 functions:
-  func_sample: # change function name
-    handler: handler.sample
+  func_sample: # !!!!!  CHANGE FUNCTION NAME !!!!!
+    handler: handler.sample # !!!!!  CHANGE FUNCTION NAME FOR THE SAME ONE IN FILE !!!!!
     events:
       - http:
-          path: ${self:custom.prefixRoutePath}/sample
+          path: ${self:custom.prefixRoutePath}/sample # !!!!!  CHANGE ROUTE FOR YOU FUNCTION !!!!!
           method: get
 #         private: true  # if you want the apiKey to be required
+
+
+
 
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
