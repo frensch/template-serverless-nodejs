@@ -22,7 +22,7 @@
   "devDependencies": {
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "serverless-offline": "^5.12.1",
+    "serverless-offline": "^12.0.4",
     "sinon": "^7.5.0"
   }
 }
